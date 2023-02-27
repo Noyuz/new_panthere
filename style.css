@@ -1,48 +1,66 @@
 @import 'css/index.css';
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #FFF;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
-  list-style-type: none;
+h1 {
+  color: #575757;
+  font-size: 32px;
 }
 
-a,
-button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
+h2 {
+  font-size: 22px;
+  line-height: 1.4em;
+}
+
+h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
+}
+
+a, button {
+  transition: all .3s ease-in-out;
+  outline: none!important;
 }
 
 a:hover {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p, label, a, .btn {
+  font-family: "helvetica";
+  font-weight: 400;
+  color: #575757;
 }
 
 #page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
-    width: 100%;
-    clear: both;
-    background: 50% 50% no-repeat;
-    padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
+  width: 100%;
+  clear: both;
+  background: 50% 50% no-repeat;
+  padding: 0 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
 }
 
 .bloc .container {
@@ -442,8 +460,8 @@ nav .caret {
 }
 
 .mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .mg-lg {
@@ -645,21 +663,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
-
 .container {
     max-width: 1000px;
 }
@@ -691,11 +694,6 @@ p {
     margin: auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
-
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
@@ -708,32 +706,18 @@ p {
 .social {
     max-width: 400px;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
+.citation {
+  font-size: 1.25em;
 }
 
 .med-width-whitespace {
     max-width: 800px;
     margin: auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-  color: #333333!important;
-}
-
-h4 {
-  color: #333333!important;
 }
 
 .icons {
@@ -747,6 +731,7 @@ h4 {
 
 .portfolio-thumb {
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .portfolio-row {
@@ -828,7 +813,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
